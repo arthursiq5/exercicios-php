@@ -23,4 +23,15 @@ class ValidacoesTest extends TestCase
         $this->assertFalse($this->Validacoes->validaNome('Charlingtonglaevionbeecheknavarelildiscreison'));
     }
     
+    public function testValidaIdade(): void
+    {
+        $this->assertTrue($this->Validacoes->validaIdade(22));
+        $this->assertTrue($this->Validacoes->validaIdade('22'));
+        $this->assertTrue($this->Validacoes->validaIdade(' 22 '));
+
+        $this->assertFalse($this->Validacoes->validaIdade('teste'));
+        
+        $this->assertFalse($this->Validacoes->validaIdade(-22));
+        $this->assertFalse($this->Validacoes->validaIdade('-22'));
+    }
 }
