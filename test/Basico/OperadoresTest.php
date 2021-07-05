@@ -18,4 +18,27 @@ class OperadoresTest extends TestCase
 
         $this->assertEquals(2, $num1 % $num2);
     }
+
+    public function testIncrementAndDecrement(): void
+    {
+        $a = 2;
+        $b = $a++;
+        $this->assertEquals(3, $a);
+        $this->assertEquals(2, $b);
+
+        $a = 2;
+        $b = ++$a;
+        $this->assertEquals(3, $a);
+        $this->assertEquals(3, $b);
+
+        $a = 2;
+        $b = $a--;
+        $this->assertEquals(1, $a);
+        $this->assertEquals(2, $b);
+
+        $a = 2;
+        $b = --$a;
+        $this->assertEquals(1, $a);
+        $this->assertEquals(1, $b);
+    }
 }
