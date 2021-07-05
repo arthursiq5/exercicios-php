@@ -13,6 +13,6 @@ class OperadoresTest extends TestCase
         $this->assertEquals(14, $num1 + $num2);
         $this->assertEquals(2, $num1 - $num2);
         $this->assertEquals(48, $num1 * $num2);
-        $this->assertEquals(1.3333333333333, $num1 / $num2);
+        $this->assertEquals(1.33, round($num1 / $num2, 2));
     }
 }
