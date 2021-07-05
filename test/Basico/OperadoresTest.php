@@ -41,4 +41,27 @@ class OperadoresTest extends TestCase
         $this->assertEquals(1, $a);
         $this->assertEquals(1, $b);
     }
+
+    public function testComparision(): void
+    {
+        // equal
+        $this->assertTrue(true == true);
+        $this->assertTrue(1 == 1);
+        $this->assertTrue(1 == '1');
+        $this->assertFalse(1 == 2);
+
+        // identical
+        $this->assertTrue(1 === 1);
+        $this->assertFalse(1 === '1');
+
+        // not equal
+        $this->assertTrue(1 != 2);
+        $this->assertFalse(1 != 1);
+        $this->assertTrue(1 <> 2);
+        $this->assertFalse(1 <> 1);
+
+        // not identical
+        $this->assertTrue(1 !== '1');
+        $this->assertFalse(1 !== 1);
+    }
 }
