@@ -63,5 +63,13 @@ class OperadoresTest extends TestCase
         // not identical
         $this->assertTrue(1 !== '1');
         $this->assertFalse(1 !== 1);
+
+        //greather than
+        $this->assertTrue(1 > 0);
+        $this->assertTrue(0 < 1);
+        $this->assertTrue(1 >= 0);
+        $this->assertTrue(1 >= 1);
+        $this->assertTrue(0 <= 1);
+        $this->assertTrue(0 <= 0);
     }
 }
