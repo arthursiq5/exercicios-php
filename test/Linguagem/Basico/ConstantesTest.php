@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Test\Basico;
+namespace App\Test\Linguagem\Basico;
 
 use PHPUnit\Framework\TestCase;
 
