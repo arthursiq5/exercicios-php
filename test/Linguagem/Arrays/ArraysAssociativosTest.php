@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Test\Arrays;
+namespace App\Test\Linguagem\Arrays;
 
 use PHPUnit\Framework\TestCase;
 
