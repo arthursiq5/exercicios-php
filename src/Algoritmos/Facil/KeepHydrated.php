@@ -25,4 +25,9 @@ class KeepHydrated
         return floor($t*0.5);
     }
 
+    public static function gohorseLitres($t) {
+        // don't do this, it's a gambi made with gohorse
+        $result = array_reverse(explode('.', (($t * .5) + 0.001)));
+        return (int) array_pop($result);
+    }
 }
