@@ -7,6 +7,7 @@ class Categorias
     public static $categorias = [
         'infantil',
         'adolescente',
-        'adulto'
+        'adulto',
+        'idoso',
     ];
 }
